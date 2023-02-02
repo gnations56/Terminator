@@ -1,6 +1,6 @@
 import asyncio
 import re
-
+import json
 import discord
 from discord.ext import commands
 import asyncio
@@ -117,4 +117,4 @@ async def info_error(ctx, error):
         await ctx.send("You are not authorized!")
 
 
-bot.run(config.token)
+bot.run(config["token"])
